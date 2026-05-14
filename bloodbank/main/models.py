@@ -11,3 +11,4 @@ class Donor(models.Model):
         ('AB-', 'AB-'),
     ]
     name = models.CharField(max_length=100)
+    age = models.IntegerField()
