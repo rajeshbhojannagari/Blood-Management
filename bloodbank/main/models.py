@@ -10,3 +10,4 @@ class Donor(models.Model):
         ('AB+', 'AB+'),
         ('AB-', 'AB-'),
     ]
+    name = models.CharField(max_length=100)
