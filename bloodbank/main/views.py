@@ -25,3 +25,4 @@ def donors(request):
 def search(request):
     query = request.GET.get('blood_group')
     result = Donor.objects.filter(blood_group=query)
+    return render(request, 'search.html', {'result': result})
