@@ -1,2 +1,12 @@
 from django.db import models
 class Donor(models.Model):
+    BLOOD_GROUPS = [
+        ('A+', 'A+'),
+        ('A-', 'A-'),
+        ('B+', 'B+'),
+        ('B-', 'B-'),
+        ('O+', 'O+'),
+        ('O-', 'O-'),
+        ('AB+', 'AB+'),
+        ('AB-', 'AB-'),
+    ]
