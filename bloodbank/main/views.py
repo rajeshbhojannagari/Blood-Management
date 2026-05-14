@@ -9,3 +9,11 @@ def add_donor(request):
         blood_group = request.POST['blood_group']
         city = request.POST['city']
         phone = request.POST['phone']
+
+        Donor.objects.create(
+            name=name,
+            age=age,
+            blood_group=blood_group,
+            city=city,
+            phone=phone
+        )
