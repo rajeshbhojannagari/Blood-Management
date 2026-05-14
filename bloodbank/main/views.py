@@ -8,3 +8,4 @@ def add_donor(request):
         age = request.POST['age']
         blood_group = request.POST['blood_group']
         city = request.POST['city']
+        phone = request.POST['phone']
