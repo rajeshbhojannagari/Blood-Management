@@ -17,3 +17,4 @@ def add_donor(request):
             city=city,
             phone=phone
         )
+        return redirect('donors')
