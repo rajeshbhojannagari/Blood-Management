@@ -5,3 +5,4 @@ def home(request):
 def add_donor(request):
     if request.method == 'POST':
         name = request.POST['name']
+        age = request.POST['age']
