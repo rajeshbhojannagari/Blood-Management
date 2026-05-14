@@ -19,3 +19,6 @@ def add_donor(request):
         )
         return redirect('donors')
     return render(request, 'add_donor.html')
+def donors(request):
+    donor_list = Donor.objects.all()
+    return render(request, 'donors.html', {'donors': donor_list})
