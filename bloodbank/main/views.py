@@ -18,3 +18,4 @@ def add_donor(request):
             phone=phone
         )
         return redirect('donors')
+    return render(request, 'add_donor.html')
