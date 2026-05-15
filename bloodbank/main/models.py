@@ -10,7 +10,7 @@ class Donor(models.Model):
         ('AB+', 'AB+'),
         ('AB-', 'AB-'),
     ]
-    
+    name = models.CharField(max_length=100)
     age = models.IntegerField(default=18)
     blood_group = models.CharField(max_length=5, choices=BLOOD_GROUPS)
     city = models.CharField(max_length=100)
