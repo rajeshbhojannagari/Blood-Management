@@ -15,7 +15,7 @@ class Donor(models.Model):
     blood_group = models.CharField(max_length=5, choices=BLOOD_GROUPS)
     city = models.CharField(max_length=100)
     phone = models.CharField(max_length=15)
-    availability = models.BooleanField(default=True)
+    
 
     def __str__(self):
         return self.name
